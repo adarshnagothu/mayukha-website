@@ -12,10 +12,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Header></Header>
-      <CuteMoments></CuteMoments>
+    
     <Routes>
     <Route path="/" element={<Home></Home>} />
   <Route path="/birthdaycountdown" element={<BirthdayCountdown />} />
+  <Route path="/cutemoments" element={<CuteMoments/>} />
 </Routes>
 </BrowserRouter>
     </div>
