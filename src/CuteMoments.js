@@ -48,9 +48,10 @@ function CuteMoments() {
           justifyContent: "center",
         }}
       >
-        {filteredVideos.map((video, index) => (
-          <div key={index} style={{ width: "250px", textAlign: "center" }}>
+        {filteredVideos.map((video) => (
+          <div key={video.title} style={{ width: "250px", textAlign: "center" }}>
             <video
+              key={video.title}
               height="280"
               width="100%"
               controls
